@@ -1,0 +1,19 @@
+# Code owners for RWA-DeFi-Contract
+# This file defines ownership of different parts of the codebase
+
+# Global owners
+* @earthskyorg/maintainers
+
+# Contract owners
+/contracts/ @earthskyorg/contracts-team
+
+# Test owners
+/test/ @earthskyorg/test-team
+
+# Documentation owners
+/docs/ @earthskyorg/docs-team
+*.md @earthskyorg/docs-team
+
+# CI/CD owners
+/.github/ @earthskyorg/devops-team
+

@@ -1,0 +1,52 @@
+{
+  "name": "rwa-defi-contract",
+  "version": "1.0.0",
+  "description": "Real-World Asset (RWA) Tokenization Protocol for Real-Estate Auctions and Mortgage Lending",
+  "author": "RWA-DeFi-Contract Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/earthskyorg/RWA-DeFi-Contract.git"
+  },
+  "keywords": [
+    "defi",
+    "rwa",
+    "real-estate",
+    "mortgage",
+    "lending",
+    "nft",
+    "ethereum",
+    "solidity",
+    "smart-contracts"
+  ],
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:foundry": "forge test",
+    "test:coverage": "forge coverage",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "format": "prettier --write '**/*.{js,json,md}'",
+    "size": "hardhat size-contracts",
+    "clean": "hardhat clean && forge clean"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@prb/math": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.14.0",
+    "hardhat-contract-sizer": "^2.8.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.2",
+    "prettier": "^3.0.0",
+    "solhint": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

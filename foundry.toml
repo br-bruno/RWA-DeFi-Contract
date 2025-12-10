@@ -1,0 +1,29 @@
+[profile.default]
+src = 'contracts'
+out = 'out'
+libs = ['lib']
+auto_detect_remappings = false
+solc_version = '0.8.20'
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+evm_version = 'london'
+remappings = [
+    'ds-test/=lib/forge-std/lib/ds-test/src/',
+    'forge-std/=lib/forge-std/src/',
+    '@prb/math/=lib/prb-math/',
+    '@openzeppelin/=lib/openzeppelin-contracts/',
+    '@chainlink/contracts=lib/chainlink/contracts/'
+]
+
+# Test configuration
+[profile.default.test]
+fuzz = { runs = 256 }
+invariant = { runs = 256, depth = 15 }
+
+# CI profile
+[profile.ci]
+fuzz = { runs = 10000 }
+invariant = { runs = 10000, depth = 15 }
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
